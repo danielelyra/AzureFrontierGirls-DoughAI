@@ -27,9 +27,13 @@ Inside the project, I deployed the gpt-4o-mini model, making it available for us
 I created a new agent in Azure AI Foundry with the following configuration:
 
 **Agent Name**: DoughAI
+
 **Model Deployment**: gpt-4o-mini
+
 **Agent Description**: Personal finance organizer
+
 **Action**: Calculates the user’s monthly remaining balance and suggests a healthy financial distribution.
+
 <img width="886" height="262" alt="image" src="https://github.com/user-attachments/assets/4d24d631-8fab-40f7-95de-0b1b124b2754" />
 
 
@@ -42,6 +46,7 @@ Your tone should be warm, direct, modern, and fun.
 You must explain concepts clearly, compare options, suggest good practices, and create practical, easy-to-follow plans.”
 
 **Screenshots of responses, flow, and execution:**
+
 1. first without the active action
 <img width="886" height="626" alt="image" src="https://github.com/user-attachments/assets/3030db07-b818-4601-947c-e5e498002142" />
 
