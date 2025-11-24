@@ -1,0 +1,111 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API de Finanças Pessoais - Dough",
+    "version": "1.0.0",
+    "description": "API usada pelo agente Dough para calcular a sobra mensal e sugerir uma distribuição saudável do dinheiro."
+  },
+  "servers": [
+    {
+      "url": "https://azure-frontier-girls-resource.services.ai.azure.com/api/projects/azure-frontier-girls-daniele-lyra",
+      "description": "Servidor da API do Dough"
+    }
+  ],
+  "paths": {
+    "/calcular_sobra_mensal": {
+      "post": {
+        "operationId": "calcular_sobra_mensal",
+        "summary": "Calcula quanto sobra por mês e sugere uma distribuição.",
+        "description": "Recebe a renda mensal e as despesas totais e retorna a sobra, o percentual de economia e uma sugestão de uso.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalcularSobraMensalRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Cálculo realizado com sucesso.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CalcularSobraMensalResponse"
+                },
+                "example": {
+                  "rendaMensal": 5000,
+                  "despesasTotais": 3200,
+                  "sobraMensal": 1800,
+                  "percentualEconomia": 36,
+                  "sugestaoTexto": "Você pode guardar R$ 1.800 por mês. Exemplo de divisão: 50% para reserva de emergência, 30% para metas de curto prazo e 20% para lazer."
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requisição inválida (por exemplo, valores negativos ou campos ausentes)."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CalcularSobraMensalRequest": {
+        "type": "object",
+        "properties": {
+          "rendaMensal": {
+            "type": "number",
+            "format": "float",
+            "description": "Renda mensal total do usuário."
+          },
+          "despesasTotais": {
+            "type": "number",
+            "format": "float",
+            "description": "Total de despesas mensais do usuário."
+          }
+        },
+        "required": ["rendaMensal", "despesasTotais"]
+      },
+      "CalcularSobraMensalResponse": {
+        "type": "object",
+        "properties": {
+          "rendaMensal": {
+            "type": "number",
+            "format": "float",
+            "description": "Renda mensal total informada."
+          },
+          "despesasTotais": {
+            "type": "number",
+            "format": "float",
+            "description": "Despesas mensais totais informadas."
+          },
+          "sobraMensal": {
+            "type": "number",
+            "format": "float",
+            "description": "Valor que sobra por mês após as despesas."
+          },
+          "percentualEconomia": {
+            "type": "number",
+            "format": "float",
+            "description": "Percentual da renda que está sendo economizado."
+          },
+          "sugestaoTexto": {
+            "type": "string",
+            "description": "Sugestão textual amigável para o usuário sobre como usar essa sobra."
+          }
+        },
+        "required": [
+          "rendaMensal",
+          "despesasTotais",
+          "sobraMensal",
+          "percentualEconomia",
+          "sugestaoTexto"
+        ]
+      }
+    }
+  }
+}
