@@ -67,6 +67,27 @@ You must explain concepts clearly, compare options, suggest good practices, and 
 <img width="886" height="446" alt="image" src="https://github.com/user-attachments/assets/ec3fa198-9e3c-4bbe-b5ce-1acae7dec2c9" />
 
 
+## 🔮 Planned Future Actions
+
+As the DoughAI personal financial assistant evolves, various advanced actions can be implemented to enhance its financial guidance capabilities.
+
+**1. Create Financial Reminders**
+This Action will allow DoughAI to schedule reminders for important financial tasks such as paying bills, credit card due dates, savings deposits, subscription renewals, and recurring financial obligations. The goal is to help users stay organized and avoid late fees or financial surprises.
+
+**2. Categorize Expenses**
+DoughAI will automatically classify user expenses into categories such as housing, transportation, food, leisure, subscriptions, and more. This Action will help users understand spending patterns and identify potential areas for cost optimization.
+
+**3. Generate a Monthly Budget**
+This Action will produce a personalized budget plan based on the user’s income, expenses, habits, and goals. It will allow DoughAI to create clear budget recommendations, track spending limits, and help users stick to a realistic monthly financial structure.
+
+**4. Prioritize Debts**
+This Action will evaluate a user’s outstanding debts and suggest a priority order using strategies like the Avalanche Method (highest interest first) or Snowball Method (smallest balance first). The goal is to help users pay off debts faster and reduce financial stress.
+
+**5. Create Financial Goals**
+With this Action, DoughAI will help users define clear financial goals—such as building an emergency fund, saving for a trip, buying a car, or paying down debt—along with timelines, contribution plans, and progress tracking.
+
+**6. Calculate Emergency Fund Timeframe**
+This Action will compute how long it will take for the user to build a complete emergency fund based on monthly savings capacity, the recommended emergency fund amount, and savings habits. This feature will provide realistic projections and motivate users to stay consistent.
 
 ## 📋 Tech Stack
 - Azure AI Foundry (AI Studio)
