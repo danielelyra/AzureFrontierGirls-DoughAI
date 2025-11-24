@@ -1,2 +1,81 @@
-# AzureFrontierGirls-DoughAI
-Built using Azure AI Foundry, the assistant combines natural language intelligence with custom backend Actions to deliver practical, friendly, and real-time financial guidance.
+# 🤖 AzureFrontierGirls-DoughAI
+Dough – Personal Finance Assistant Powered by Azure AI Agents
+Part of the Azure Frontier Girls Challenge
+
+Dough is an AI-powered personal finance assistant designed to help users understand, organize, and make smarter decisions about their money.
+
+## 🚀 Project Overview
+This project implements an AI agent (“Dough”) focused on personal finance awareness and decision support.
+Dough behaves like a friendly, trustworthy, and intelligent companion — helping users plan budgets, analyze monthly income vs. expenses, and stay on track with financial goals.
+
+Built using Azure AI Foundry, the assistant combines natural language intelligence with custom backend Actions to deliver practical, friendly, and real-time financial guidance. The system uses Azure AI Agents with custom Actions, allowing the AI to call external APIs to perform real calculations.
+
+
+## 🛠️ Development :Azure AI Agent Setup Summary
+I created a complete Azure AI solution as part of this project, following these steps:
+
+**1. Azure Resource Creation**
+I started by creating the required Azure resource to host the AI capabilities.
+
+**2. Project Setup in Microsoft Foundry**
+I created a new project inside Microsoft Foundry, which serves as the workspace for managing deployments, agents, and Actions.
+
+**3. Model Deployment**
+Inside the project, I deployed the gpt-4o-mini model, making it available for use within the agent.
+
+**4. Agent Creation: DoughAI**
+I created a new agent in Azure AI Foundry with the following configuration:
+
+**Agent Name**: DoughAI
+**Model Deployment**: gpt-4o-mini
+**Agent Description**: Personal finance organizer
+**Action**: Calculates the user’s monthly remaining balance and suggests a healthy financial distribution.
+<img width="886" height="262" alt="image" src="https://github.com/user-attachments/assets/4d24d631-8fab-40f7-95de-0b1b124b2754" />
+
+
+**Agent Instructions**:
+“You are a personal finance agent that helps people organize their income and expenses. You act like a smart friend who gives financial advice in a simple, clear, and friendly way.
+You do not provide investment recommendations or suggest investment products.
+You do not answer questions outside the topic of personal finance.
+You do not offer formal financial consulting and you do not ask for sensitive data.
+Your tone should be warm, direct, modern, and fun.
+You must explain concepts clearly, compare options, suggest good practices, and create practical, easy-to-follow plans.”
+
+**Screenshots of responses, flow, and execution:**
+1. first without the active action
+<img width="886" height="626" alt="image" src="https://github.com/user-attachments/assets/3030db07-b818-4601-947c-e5e498002142" />
+
+<img width="886" height="671" alt="image" src="https://github.com/user-attachments/assets/85059be5-6a04-4e8b-8358-5d1b598f1e95" />
+
+<img width="886" height="656" alt="image" src="https://github.com/user-attachments/assets/57176bd1-a149-4d75-868b-454f39feade0" />
+
+<img width="886" height="665" alt="image" src="https://github.com/user-attachments/assets/59376d83-0eda-4983-a982-e1d3743acac4" />
+
+<img width="886" height="684" alt="image" src="https://github.com/user-attachments/assets/48300ee4-2fc6-4e99-962c-33f82f466019" />
+
+
+2. then with the action active
+
+<img width="886" height="572" alt="image" src="https://github.com/user-attachments/assets/b2f37f70-52fe-4191-9bc3-ff6eea331191" />
+
+<img width="886" height="443" alt="image" src="https://github.com/user-attachments/assets/77af83bf-f00b-4b07-b8ba-1b2b7c31adbc" />
+
+<img width="886" height="698" alt="image" src="https://github.com/user-attachments/assets/65570ebb-3cd5-4fb9-af13-414ca14825b9" />
+
+<img width="886" height="441" alt="image" src="https://github.com/user-attachments/assets/734481f4-5188-4f1f-b42c-f741e14f9d71" />
+
+<img width="886" height="446" alt="image" src="https://github.com/user-attachments/assets/ec3fa198-9e3c-4bbe-b5ce-1acae7dec2c9" />
+
+
+
+## 📋 Tech Stack
+- Azure AI Foundry (AI Studio)
+- Azure AI Agents + Actions
+- OpenAPI 3.0 specification for exposing APIs
+- Visual Code Studio
+
+## 📚 Additional Resources
+- [ai.azure.com](https://ai.azure.com)
+- [Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/)
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework)
+- [Azure AI Foundry](https://learn.microsoft.com/azure/ai-studio/)
